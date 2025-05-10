@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Aplicar movimiento horizontal
         transform.position += new Vector3(moveX * speed * Time.deltaTime, 0f, 0f);
-        transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        //transform.rotation = Quaternion.Euler(0f, 0f, 0f);
 
         // Salto con impulso cuando presionas W una vez
         if (Input.GetKeyDown(KeyCode.W) && isGrounded)
